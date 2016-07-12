@@ -1,8 +1,5 @@
-FROM registry.dataos.io/library/node:5
-MAINTAINER tobe tobeg3oogle@gmail.com
+FROM node:5
 ENV VERSION=3.1.1
-ADD . "/gitbook"
-RUN echo "registry=https://registry.npm.taobao.org" > ~/.npmrc
-#RUN cd /gitbook/docs && mv * /github
+#RUN echo "registry=https://registry.npm.taobao.org" > ~/.npmrc
 RUN npm install --global gitbook-cli && gitbook fetch ${VERSION}  
-RUN cd /gitbook && gitbook install && gitbook init 
+RUN gitbook install
