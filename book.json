@@ -12,6 +12,7 @@
     "plugins": [
         "fontsettings",
         "search-pro",
-        "highlight"
+        "highlight",
+        "-search"
     ]
 }
