@@ -10,9 +10,10 @@
         "epub": "styles/epub.css"
     },
     "plugins": [
+        "-search",
         "fontsettings",
         "search-pro",
         "highlight",
-        "-search"
+        "local-video"
     ]
 }
